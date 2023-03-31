@@ -91,7 +91,18 @@ empOne.getSchedule()
 */
 
 //CODE HERE
-
+class manager extends Employee{
+    constructor(name, shifts, employees){
+    super(name, shifts)
+    this.Employee = employees
+    }
+    getEmployees(){
+        console.log(`${this.name}manages ${this.employees}`)
+    }
+    addEmployee(emp){
+        this.employees.push(emp)
+    }
+}
 
 
 /*
@@ -106,6 +117,7 @@ empOne.getSchedule()
 */
 
 //CODE HERE
+let manager = new manager(`winston`, `weekday morings, afternoons`,[`cece,` `shmidt`])
 
 
 /*
@@ -114,14 +126,14 @@ empOne.getSchedule()
 */
 
 //CODE HERE
-
 /*
-    Call the `addEmployee` method on the 
-    `manager` object passing in the string 
-    'Coach' or whatever name you'd like.
+Call the `addEmployee` method on the 
+`manager` object passing in the string 
+'Coach' or whatever name you'd like.
 */
 
 //CODE HERE 
+manager.getEmployee
 
 /*
     Call the `getEmployees` method on the
@@ -130,3 +142,4 @@ empOne.getSchedule()
 */
 
 //CODE HERE
+manager.Employee

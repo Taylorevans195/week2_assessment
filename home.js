@@ -85,7 +85,15 @@ console.log(canWeDeliver(12345))
 */
 
 // CODE HERE
-
+    const canWeDeliverTwo = (zipCode)=>{
+        for(let i= 0; i <deliveryAreaZipCodes.length; i++){
+            if (deliveryAreaZipCodes[i]===zipCode) {
+                return`we can deliver`
+            }
+        }
+        return `sorry we cannto deliver`
+    }
+    console.log(canWeDeliver(13245))
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -121,7 +129,8 @@ Array.reaplce()
 */
 
 //CODE HERE
-
+deals[0].title = deals[0].title.replace(`15`,`10`)
+console.log(deals[0])
 
 
 /*

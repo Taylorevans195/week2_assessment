@@ -165,13 +165,17 @@ let foodArr = {
 */
 
 //CODE HERE
-
-
+const filterByProperty = (property, number ,type)=>{
+    if(type == `above`){
+        return foodArr.filter(e => e[property] > number)
+    }else{ return foodArr.filter(e => e[property])}
+}
 /*
-    Invoke the `filterByProperty` function passing
-    in a value for each paramter.
+Invoke the `filterByProperty` function passing
+in a value for each paramter.
 
-    You'll have to console.log to see the filtered array
+You'll have to console.log to see the filtered array
 */
 
 //CODE HERE
+console.log(filterByProperty(`price`, 10, `below`))
