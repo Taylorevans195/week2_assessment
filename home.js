@@ -118,8 +118,9 @@ const deals = [
         desc: '   This deal lasts until the end of March! '
     }
 ]
-Array.reaplce()
+
 /*
+
     The owner has decided to take the 15% off
     deal down to 10%.
 
@@ -134,16 +135,18 @@ console.log(deals[0])
 
 
 /*
-    The restaurant is going to continue its
-    family deal for another month. 
+The restaurant is going to continue its
+family deal for another month. 
 
-    Reassign the value of the second deal's desc
-    to be itself, but use the `replace` method
-    to replace the word March with April.
+Reassign the value of the second deal's desc
+to be itself, but use the `replace` method
+to replace the word March with April.
 
-    You should also make sure that there is no
-    whitespace in this string, since it seems
-    to be displaying wrong on the live site.
+You should also make sure that there is no
+whitespace in this string, since it seems
+to be displaying wrong on the live site.
 */
 
 //CODE HERE
+deals[1].desc = deals[1].desc.replace(`March` , `April`)
+console.log(deals[1])

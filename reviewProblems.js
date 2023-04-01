@@ -136,3 +136,5 @@ let totalValue = myGarage.reduce((accumulator, currentValue) => {
     Then use the inspection method to check if
     it worked!
 */
+
+

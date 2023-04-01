@@ -51,7 +51,7 @@ const empOne = new Employee(`Jess`, `weekday mornings, weekday afternoons`)
 //CODE HERE
 empOne.getSchedule()
 
-/* ???
+/* 
     Make a copy of the empOne object
     using the spread operator.
     Save it to a variable called `empTwo`.
@@ -64,7 +64,9 @@ empOne.getSchedule()
 */
 
 //CODE HERE
-
+let empTwo = {...empOne} 
+    empTwo.name = `nick`
+    console.log(empTwo)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -91,7 +93,7 @@ empOne.getSchedule()
 */
 
 //CODE HERE
-class manager extends Employee{
+class Manager extends Employee{
     constructor(name, shifts, employees){
     super(name, shifts)
     this.Employee = employees
@@ -117,7 +119,7 @@ class manager extends Employee{
 */
 
 //CODE HERE
-let manager = new manager(`winston`, `weekday morings, afternoons`,[`cece,` `shmidt`])
+let manager = new Manager(`winston`, `weekday morings, afternoons`,[`cece`, `shmidt`])
 
 
 /*
@@ -126,6 +128,7 @@ let manager = new manager(`winston`, `weekday morings, afternoons`,[`cece,` `shm
 */
 
 //CODE HERE
+manager.getEmployees()
 /*
 Call the `addEmployee` method on the 
 `manager` object passing in the string 
@@ -133,7 +136,7 @@ Call the `addEmployee` method on the
 */
 
 //CODE HERE 
-manager.getEmployee
+manager.addEmployee(`Coach`)
 
 /*
     Call the `getEmployees` method on the
@@ -142,4 +145,4 @@ manager.getEmployee
 */
 
 //CODE HERE
-manager.Employee
+manager.getEmployees()

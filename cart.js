@@ -35,6 +35,10 @@ const cart = [
 
 //CODE HERE
 
+const total = cart.reduce((acc , curr) => {
+    return acc + curr.price;
+}, 0);
+console.log(total);
 
 
 

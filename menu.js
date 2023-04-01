@@ -97,14 +97,46 @@ console.log(newCategory)
 */
 
 //CODE HERE
-let foodArr = {
+let foodArr = [{
+    name:`chicken salad`,
+    price:10.99,
+    category: `not vegan`,
+    popularity:8/10,
+    rating:8,
+    tags:[`small size`]
+},
+{
+    name:`chicken salad`,
+    price:10.99,
+    category: `not vegan`,
+    popularity:8/10,
+    rating:8,
+    tags:[`reg size`]
+},
+{
     name:`chicken salad`,
     price:10.99,
     category: `not vegan`,
     popularity:8/10,
     rating:8,
     tags:[`party size`]
-}
+},
+{
+    name:`chicken salad`,
+    price:10.99,
+    category: `not vegan`,
+    popularity:8/10,
+    rating:8,
+    tags:[`party size`]
+},
+{
+    name:`chicken salad`,
+    price:10.99,
+    category: `not vegan`,
+    popularity:8/10,
+    rating:8,
+    tags:[`party size`]
+}]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -121,7 +153,13 @@ let foodArr = {
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter((food) =>{
+    return food.tags.includes(`party size`)
+})
+
+console.log(filteredFood)
+
+
 
 
 
